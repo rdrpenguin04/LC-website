@@ -1,0 +1,14 @@
+{
+  "news":[
+    {
+      "title":"Current projects",
+      "author":"Ray Redondo",
+      "text":"Here are the current projects we have going on: <ul><li>Robot Arena: Main project</li><li>Save File Game: Flappy Bird in SMW</li></ul>"
+    },
+    {
+      "title":"Welcome!",
+      "author":"Ray Redondo and Matthew Johnson",
+      "text":"Hello, and welcome to the official website of Lightning Creations! This is still a work in progress, but bear with us, and this will turn out awesome! Currently there are several projects available to see and interact with, and there will certainly be more to come. There will be more news updates coming, so check back to this page often."
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+/* CSS files add styling rules to your content */
+
+body{
+background: radial-gradient(circle, white, grey);  
+  color: rgb(255, 255, 255);
+  font-family: "Trebuchet MS";
+}
+h1{
+  animation-name: swirl;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 5px #00FFFF;
+  transition: all 0.5s;
+}
+h1:hover {
+  text-shadow: 0 0 15px #00FFFF, 0 0 5px #FFFFFF;  
+}
+h3{
+  color: rgb(0, 0, 0);
+}
+h6.footer{
+  color: rgb(0, 0, 0);
+}
+a{
+  color: rgb(0, 255, 255);
+  text-shadow: 0 0 3px #FF00FF
+}
+button{
+  color: rgb(0, 0, 150);
+  background-color: rgb(150, 255, 255);
+  border-color: rgb(0, 0, 150);
+  transition: all 0.5s;
+}
+button:hover {
+  /*
+    color: rgb(181.5, 76.5, 255);
+  background-color: rgb(181.5, 255, 255);
+  border-color: rgb(181.5, 76.5, 255);  
+  box-shadow: 3px 3px 5px #00FFFF;
+Is what I previously had
+  */
+  color: rgb(75, 0, 150);
+  background-color: rgb(255, 0, 255);
+  border-color: rgb(75, 0, 150);  
+  box-shadow: 3px 3px 5px #00FFFF;
+}
+.border{
+    text-shadow: 1px 1px 0px #000000, -1px 1px 0px #000000, 1px -1px 0px #000000, -1px -1px 0px #000000;
+}
+#blueText{
+  color: rgb(0, 0, 150);
+}
+#giantGlowText{
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 40px #0000FF, 0 0 20px #00FFFF, 0 0 5px #FFFFFF;
+  
+}
+#neonGlow{
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 5px #00FFFF;
+}
+@keyframes phase{
+  0%{color: rgb(255, 255, 255)}
+  50%{color: rgb(225, 225, 225)}
+  100%{color: rgb(255, 255, 255)}
+}
+@keyframes swirl{
+  0%{color: black}
+  25%{color: #00FF00}
+  50%{color: #00CCCC}
+  75%{color: #0000FF}
+  100%{color: black}
+}
+.phase{
+  animation-name: phase;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.swirl{
+  animation-name: swirl;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+img.banner {
+  align: center;
+	max-width: 100%;
+	height: auto;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #777777;
+  font-family: "Lucida Console";
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  text-shadow: 0 0 6px #FF00FF;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn:hover {
+  background-color: #0000FF;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #00FFFF;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
