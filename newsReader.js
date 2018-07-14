@@ -3,7 +3,7 @@ fetch("/news.json").then(function(response) {
     var newsText = "";
     var news = JSON.parse(text).news;
     for(var i = 0; i < news.length; i++) {
-      newsText += "<hr /><h1>" + news[i].title + "</h1><h3>by " + news[i].author + "</h3><p>"+news[i].text+"</p>";
+      newsText += "<hr /><h1>" + news[i].title + "</h1><h3>by " + news[i].author + "</h3><div class=\"border\"><p>"+news[i].text+"</p></div>";
     }
     var newsDiv = document.getElementById("newsContent");
     newsDiv.innerHTML = newsText;

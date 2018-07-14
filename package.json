@@ -1,0 +1,20 @@
+{
+  "name": "lc-webpage",
+  "version": "1.0.0",
+  "description": "An amazing website for a teen-led group.",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "make",
+    "start": "node index.js"
+  },
+  "private": true,
+  "author": "Ray Redondo and Matthew Johnson",
+  "dependencies": {
+    "express": "^4.16.3",
+    "readline": "^1.3.0",
+    "body-parser": "^1.18.3",
+    "child_process": "^1.0.2",
+    "amdefine": "^1.0.1",
+    "cookie-parser": "^1.4.3"
+  }
+}

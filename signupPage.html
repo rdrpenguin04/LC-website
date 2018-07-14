@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lightning Creations - Sign Up</title>
+    <link rel="icon" href="https://cdn.glitch.com/a435f6a8-d225-4f8c-95fd-1194dc2e407e%2FLC.png?1526142665470">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js"></script>
+  </head>  
+  <body>
+    <div w3-include-html="header.html"></div>
+    <h1>
+      Sign Up
+    </h1>
+    <div id="failedDiv"></div>
+    <script>
+      var request = {};
+      var pairs = location.search.substring(1).split('&');
+      for (var i = 0; i < pairs.length; i++) {
+        var pair = pairs[i].split('=');
+        request[pair[0]] = pair[1];
+      }
+      if(request["failed"]) {
+        document.getElementById("failedDiv").innerHTML = "<p>Passwords don't match!</p>";
+      }
+    </script>
+    <form action="signup.html" method="POST" id="loginForm">
+      Username:
+      <input type="text" name="uname" required><br />
+      Password:
+      <input type="password" name="passwd" required><br />
+      Confirm Password:
+      <input type="password" name="passwdC" required><br />
+      <input type="button" value="Submit" onclick="
+                                                   var thisForm = document.getElementById('loginForm');
+                                                   var returnField = document.getElementById('returnAddress');
+                                                   var request = {};
+                                                   var pairs = location.search.substring(1).split('&');
+                                                   for (var i = 0; i < pairs.length; i++) {
+                                                     var pair = pairs[i].split('=');
+                                                     request[pair[0]] = pair[1];
+                                                   }
+                                                   returnField.setAttribute('value', request['return']);
+                                                   thisForm.submit();
+                                                   ">
+      <input id="returnAddress" type="hidden" name="return" value="">
+    </form>
+    <footer>
+      <div align="center">
+        <h6 class="footer">
+          &copy;2018 Lightning Creations. All rights reserved. Lightning Creations, the Lightning Creations logo, and anything related will be trademarks of Lightning Creations.
+        </h6>
+      </div>
+    </footer>
+    <script>includeHTML();disableCookieBox();</script>
+  </body>
+</html>
