@@ -1,6 +1,26 @@
 {
   "news":[
     {
+      "title":"More updates",
+      "author":"Ray Redondo",
+      "text":"You already saw one of them. We now have cookies. Other than that, all of the khan academy projects now have been consolidated into one loader page, and that one page will load everything! Oh, one more thing, those pages also now have the header consistent with everything else. Any bookmarks will soon be replaced with redirects."
+    },
+    {
+      "title":"New updates",
+      "author":"Matthew Johnson",
+      "text":"Well, I'm putting this up since Rdr didn't. You nowhave the ability to log in and sign up. Now, I have no clue what we'd use it for, but it works, so sign up today!"
+    },
+    {
+      "title":"Back online!",
+      "author":"Ray Redondo",
+      "text":"And, we're already back online! Thank you for your patience (or lack of), and enjoy the up and coming features of the webpage!"
+    },
+    {
+      "title":"WARNING",
+      "author":"Ray Redondo",
+      "text":"The website will be going down sometime today for server reconstruction and will be down for as long as we need to."
+    },
+    {
       "title":"Current projects",
       "author":"Ray Redondo",
       "text":"Here are the current projects we have going on: <ul><li>Robot Arena: Main project</li><li>Save File Game: Flappy Bird in SMW</li></ul>"

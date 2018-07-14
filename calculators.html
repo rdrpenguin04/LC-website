@@ -1,40 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Lightning Creations</title>
-    <link rel="icon" href="http://example.com/favicon.png"><!--Will make this soon.-->
+    <title>Lightning Creations - Calculators</title>
+    <link rel="icon" href="https://cdn.glitch.com/a435f6a8-d225-4f8c-95fd-1194dc2e407e%2FLC.png?1526142665470">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/style.css">
-    <script src="/script.js" defer></script>
+    <script src="/script.js"></script>
   </head>  
   <body>
-    <header>
-      <img class="banner" src="https://cdn.glitch.com/a435f6a8-d225-4f8c-95fd-1194dc2e407e%2FLC-banner.png?1525831700826" alt="Lightning Creations"/>
-      <div class="navbar">
-        <a href="" onclick="goToPage('index.html'); return false">Home</a>
-        <a href="" onclick="goToPage('news.html'); return false">News</a>
-        <div class="dropdown">
-          <button class="dropbtn" onlcick="goToPage('calculators.html')">Calculators<i class="fa fa-caret-down"></i></button>
-          <div class="dropdown-content">
-            <a href="" onclick="goToPage('project-mj-18g.html'); return false">MJ-18G</a>
-            <a href="" onclick="goToPage('project-rr-nspire-ka.html'); return false">RR nSpire KA</a>  
-          </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn" onclick="goToPage('simulators.html')">Simulators<i class="fa fa-caret-down"></i></button>
-          <div class="dropdown-content">
-            <a href="" onclick="goToPage('project-gravity-simulator.html'); return false">Gravity Simulator</a>
-          </div>
-        </div>
-      </div>
-    </header>
+    <div w3-include-html="header.html"></div>
     <h1>
       Calculators
     </h1>
     <p class="phase border">
-      Oh, just use the navbar normally, will you?
+      I don't know why we made these, but these are feats of effort that have been made from the ground up two entirely different ways.
     </p>
     <footer>
       <div align="center">
@@ -43,5 +24,6 @@
         </h6>
       </div>
     </footer>
+    <script>includeHTML();disableCookieBox();</script>
   </body>
 </html>

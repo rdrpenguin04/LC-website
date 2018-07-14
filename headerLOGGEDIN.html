@@ -1,0 +1,38 @@
+<header>
+  <div id="cookieNotice1" class="banner" style="background-color:black;font-family:monospace;">
+    We use cookies. I know. We are like everyone else. We use it for:<br/>
+    &nbsp;&nbsp;- Login<br/>
+    &nbsp;&nbsp;- Tracking that you clicked this<br/>
+    &nbsp;&nbsp;- Nothing else at the moment<br/>
+    So, click here if you agree to that: <button onclick="setCookie('cookieNotice1','true');document.getElementById('cookieNotice1').style.display='none';">ACCEPT</button><br/>
+    ...<br/>
+    Well, what are you waiting for?
+  </div>
+  <img class="banner" src="https://cdn.glitch.com/a435f6a8-d225-4f8c-95fd-1194dc2e407e%2FLC-banner-resize.png?1526598262004" alt="Lightning Creations"/>
+  <div class="navbar">
+    <a href="" onclick="goToPage('index.html'); return false">Home</a>
+    <a href="" onclick="goToPage('news.html'); return false">News</a>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="goToPage('calculators.html')">Calculators<i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="" onclick="goToPage('ka-viewer.html?id=2'); return false">MJ-18G</a>
+        <a href="" onclick="goToPage('ka-viewer.html?id=3'); return false">RR nSpire KA</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="goToPage('bots.html')">Bots<i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="" onclick="goToPage('ava-ii-bot.html'); return false">AVA-II</a>
+        <a href="" onclick="goToPage('lbot2-bot.html'); return false">LBOT2</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="goToPage('simulators.html')">Simulators<i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="" onclick="goToPage('ka-viewer.html?id=0'); return false">Fractals</a>
+        <a href="" onclick="goToPage('ka-viewer.html?id=1'); return false">Gravity Simulator</a>
+      </div>
+    </div>
+    <a href="" onclick="alert('STILL LOADING...'); return false" id="logoutALink">Log Out</a>
+  </div>
+</header>
